@@ -1,0 +1,106 @@
+2016-11-03 23:51:18 INFO  WebTestContextBootstrapper:259 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-11-03 23:51:18 INFO  WebTestContextBootstrapper:185 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@130f889, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1188e820, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2f490758, org.springframework.test.context.support.DirtiesContextTestExecutionListener@101df177, org.springframework.test.context.transaction.TransactionalTestExecutionListener@166fa74d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@40f08448]
+2016-11-03 23:51:18 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from URL [file:src/main/webapp/WEB-INF/spring/web-mvc-config.xml]
+2016-11-03 23:51:18 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from URL [file:src/main/resources/spring/spring-root.xml]
+2016-11-03 23:51:18 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from URL [file:src/main/resources/spring/store/spring-data-dev.xml]
+2016-11-03 23:51:19 INFO  GenericWebApplicationContext:578 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@38364841: startup date [Thu Nov 03 23:51:19 EET 2016]; root of context hierarchy
+2016-11-03 23:51:19 INFO  PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [properties/app.properties]
+2016-11-03 23:51:19 INFO  PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [properties/mail.properties]
+2016-11-03 23:51:19 INFO  AsyncAnnotationBeanPostProcessor:143 - No TaskExecutor bean found for async annotation processing.
+2016-11-03 23:51:19 INFO  EmbeddedDatabaseFactory:185 - Starting embedded database: url='jdbc:hsqldb:mem:dataSource', username='sa'
+2016-11-03 23:51:19 INFO  LocalContainerEntityManagerFactoryBean:339 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-11-03 23:51:19 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-11-03 23:51:20 INFO  Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2016-11-03 23:51:20 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-11-03 23:51:20 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-11-03 23:51:20 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-03 23:51:20 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2016-11-03 23:51:20 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-03 23:51:21 INFO  Version:27 - HV000001: Hibernate Validator 5.1.3.Final
+2016-11-03 23:51:21 INFO  SchemaExport:344 - HHH000227: Running hbm2ddl schema export
+2016-11-03 23:51:21 ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rss_feed drop constraint FK_7fsjs6dgynal5yalp22kpoemg
+2016-11-03 23:51:21 ERROR SchemaExport:427 - user lacks privilege or object not found: PUBLIC.RSS_FEED
+2016-11-03 23:51:21 ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rss_feed_entry drop constraint FK_pjey8do5ttij2l8258sdkuoji
+2016-11-03 23:51:21 ERROR SchemaExport:427 - user lacks privilege or object not found: PUBLIC.RSS_FEED_ENTRY
+2016-11-03 23:51:21 ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table web_user drop constraint FK_gtjj0gwvwyo6wex1413wfg6yi
+2016-11-03 23:51:21 ERROR SchemaExport:427 - user lacks privilege or object not found: PUBLIC.WEB_USER
+2016-11-03 23:51:21 ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table web_user_x_user_role drop constraint FK_9afgn6r4sbfvqkd2qi8xhhpp3
+2016-11-03 23:51:21 ERROR SchemaExport:427 - user lacks privilege or object not found: PUBLIC.WEB_USER_X_USER_ROLE
+2016-11-03 23:51:21 ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table web_user_x_user_role drop constraint FK_7xfejxr0kxmk5eb15erlljdtp
+2016-11-03 23:51:21 ERROR SchemaExport:427 - user lacks privilege or object not found: PUBLIC.WEB_USER_X_USER_ROLE
+2016-11-03 23:51:21 INFO  SchemaExport:406 - HHH000230: Schema export complete
+2016-11-03 23:51:22 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/admin/users]}" onto public java.lang.String AdminController.showUsers(org.springframework.ui.Model)
+2016-11-03 23:51:22 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/admin/users/remove-user/{id}]}" onto public java.lang.String AdminController.removeUserById(java.lang.Long)
+2016-11-03 23:51:22 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/admin/users/{id}]}" onto public java.lang.String AdminController.userDetail(java.lang.Long,org.springframework.ui.Model)
+2016-11-03 23:51:22 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/contact],methods=[POST]}" onto public java.lang.String ContactController.sendEmail(ContactForm,org.springframework.validation.BindingResult)
+2016-11-03 23:51:22 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/contact],methods=[GET]}" onto public java.lang.String ContactController.showContactForm(org.springframework.ui.Model)
+2016-11-03 23:51:22 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/],methods=[GET]}" onto public java.lang.String HomeController.index(org.springframework.ui.Model)
+2016-11-03 23:51:22 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/login]}" onto public java.lang.String LoginController.login()
+2016-11-03 23:51:22 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/register/is-available]}" onto public java.lang.String RegisterController.available(java.lang.String)
+2016-11-03 23:51:22 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/register]}" onto public java.lang.String RegisterController.showRegisterForm(org.springframework.ui.Model)
+2016-11-03 23:51:22 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/register],methods=[POST]}" onto public java.lang.String RegisterController.registerUser(UserEntity,org.springframework.validation.BindingResult)
+2016-11-03 23:51:22 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/account],methods=[POST]}" onto public java.lang.String UserController.doAddBlog(RssFeedEntity,org.springframework.ui.Model,java.security.Principal,org.springframework.validation.BindingResult)
+2016-11-03 23:51:22 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/blog/remove/{id}]}" onto public java.lang.String UserController.removeBlog(java.lang.Long)
+2016-11-03 23:51:22 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/account]}" onto public java.lang.String UserController.account(org.springframework.ui.Model,java.security.Principal)
+2016-11-03 23:51:22 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@38364841: startup date [Thu Nov 03 23:51:19 EET 2016]; root of context hierarchy
+2016-11-03 23:51:22 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@38364841: startup date [Thu Nov 03 23:51:19 EET 2016]; root of context hierarchy
+2016-11-03 23:51:22 INFO  SimpleUrlHandlerMapping:341 - Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016-11-03 23:51:22 WARN  PostfixedApplicationResource:84 - No supported matching language for locale "definition". Using file:/C:/Users/Zhenichka/Downloads/spring-web-rss-channels-master/rss-web/src/main/webapp/WEB-INF/definitions/general_definition.xml as a non-localized resource path. see TILES-571
+2016-11-03 23:51:22 INFO  TilesAccess:93 - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+2016-11-03 23:51:23 INFO  MockServletContext:443 - Initializing Spring FrameworkServlet ''
+2016-11-03 23:51:23 INFO  TestDispatcherServlet:489 - FrameworkServlet '': initialization started
+2016-11-03 23:51:23 INFO  TestDispatcherServlet:508 - FrameworkServlet '': initialization completed in 12 ms
+2016-11-03 23:51:23 WARN  PostfixedApplicationResource:84 - No supported matching language for locale "definition". Using file:/C:/Users/Zhenichka/Downloads/spring-web-rss-channels-master/rss-web/src/main/webapp/WEB-INF/definitions/general_definition.xml as a non-localized resource path. see TILES-571
+2016-11-03 23:51:23 WARN  PostfixedApplicationResource:84 - No supported matching language for locale "definition_en". Using file:/C:/Users/Zhenichka/Downloads/spring-web-rss-channels-master/rss-web/src/main/webapp/WEB-INF/definitions/general_definition_en.xml as a non-localized resource path. see TILES-571
+2016-11-03 23:51:24 INFO  MockServletContext:443 - Initializing Spring FrameworkServlet ''
+2016-11-03 23:51:24 INFO  TestDispatcherServlet:489 - FrameworkServlet '': initialization started
+2016-11-03 23:51:24 INFO  TestDispatcherServlet:508 - FrameworkServlet '': initialization completed in 1 ms
+2016-11-03 23:51:24 INFO  MockServletContext:443 - Initializing Spring FrameworkServlet ''
+2016-11-03 23:51:24 INFO  TestDispatcherServlet:489 - FrameworkServlet '': initialization started
+2016-11-03 23:51:24 INFO  TestDispatcherServlet:508 - FrameworkServlet '': initialization completed in 1 ms
+2016-11-03 23:51:24 INFO  WebTestContextBootstrapper:259 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-11-03 23:51:24 INFO  WebTestContextBootstrapper:185 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6f5d0190, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@67332b1e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7e34b127, org.springframework.test.context.support.DirtiesContextTestExecutionListener@679dd234, org.springframework.test.context.transaction.TransactionalTestExecutionListener@60cb1ed6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1e5eb20a]
+2016-11-03 23:51:24 INFO  MockServletContext:443 - Initializing Spring FrameworkServlet ''
+2016-11-03 23:51:24 INFO  TestDispatcherServlet:489 - FrameworkServlet '': initialization started
+2016-11-03 23:51:24 INFO  TestDispatcherServlet:508 - FrameworkServlet '': initialization completed in 2 ms
+2016-11-03 23:51:24 INFO  MockServletContext:443 - Initializing Spring FrameworkServlet ''
+2016-11-03 23:51:24 INFO  TestDispatcherServlet:489 - FrameworkServlet '': initialization started
+2016-11-03 23:51:24 INFO  TestDispatcherServlet:508 - FrameworkServlet '': initialization completed in 1 ms
+2016-11-03 23:51:24 INFO  WebTestContextBootstrapper:259 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-11-03 23:51:24 INFO  WebTestContextBootstrapper:185 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3a8cea24, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1eb9a3ef, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5d318e91, org.springframework.test.context.support.DirtiesContextTestExecutionListener@298b64f7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@740b6628, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@27fe059d]
+2016-11-03 23:51:24 INFO  MockServletContext:443 - Initializing Spring FrameworkServlet ''
+2016-11-03 23:51:24 INFO  TestDispatcherServlet:489 - FrameworkServlet '': initialization started
+2016-11-03 23:51:24 INFO  TestDispatcherServlet:508 - FrameworkServlet '': initialization completed in 1 ms
+2016-11-03 23:51:24 INFO  WebTestContextBootstrapper:259 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-11-03 23:51:24 INFO  WebTestContextBootstrapper:185 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1bedc703, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@18d11527, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4998e74b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5d878b25, org.springframework.test.context.transaction.TransactionalTestExecutionListener@28279a49, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@384fda47]
+2016-11-03 23:51:24 INFO  MockServletContext:443 - Initializing Spring FrameworkServlet ''
+2016-11-03 23:51:24 INFO  TestDispatcherServlet:489 - FrameworkServlet '': initialization started
+2016-11-03 23:51:24 INFO  TestDispatcherServlet:508 - FrameworkServlet '': initialization completed in 5 ms
+2016-11-03 23:51:24 INFO  WebTestContextBootstrapper:259 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-11-03 23:51:24 INFO  WebTestContextBootstrapper:185 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@78a8978a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@f171912, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7d4d8579, org.springframework.test.context.support.DirtiesContextTestExecutionListener@159424e2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@29bcf51d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1e54a6b1]
+2016-11-03 23:51:24 INFO  MockServletContext:443 - Initializing Spring FrameworkServlet ''
+2016-11-03 23:51:24 INFO  TestDispatcherServlet:489 - FrameworkServlet '': initialization started
+2016-11-03 23:51:24 INFO  TestDispatcherServlet:508 - FrameworkServlet '': initialization completed in 1 ms
+2016-11-03 23:51:24 INFO  MockServletContext:443 - Initializing Spring FrameworkServlet ''
+2016-11-03 23:51:24 INFO  TestDispatcherServlet:489 - FrameworkServlet '': initialization started
+2016-11-03 23:51:24 INFO  TestDispatcherServlet:508 - FrameworkServlet '': initialization completed in 2 ms
+2016-11-03 23:51:24 INFO  MockServletContext:443 - Initializing Spring FrameworkServlet ''
+2016-11-03 23:51:24 INFO  TestDispatcherServlet:489 - FrameworkServlet '': initialization started
+2016-11-03 23:51:24 INFO  TestDispatcherServlet:508 - FrameworkServlet '': initialization completed in 4 ms
+2016-11-03 23:51:24 INFO  WebTestContextBootstrapper:259 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-11-03 23:51:24 INFO  WebTestContextBootstrapper:185 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@68ef01a5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@59a2388e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@186d8a71, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3dc40ab9, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2db6d68d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6518fdfd]
+2016-11-03 23:51:24 INFO  MockServletContext:443 - Initializing Spring FrameworkServlet ''
+2016-11-03 23:51:24 INFO  TestDispatcherServlet:489 - FrameworkServlet '': initialization started
+2016-11-03 23:51:24 INFO  TestDispatcherServlet:508 - FrameworkServlet '': initialization completed in 1 ms
+2016-11-03 23:51:24 INFO  MockServletContext:443 - Initializing Spring FrameworkServlet ''
+2016-11-03 23:51:24 INFO  TestDispatcherServlet:489 - FrameworkServlet '': initialization started
+2016-11-03 23:51:24 INFO  TestDispatcherServlet:508 - FrameworkServlet '': initialization completed in 1 ms
+2016-11-03 23:51:24 INFO  MockServletContext:443 - Initializing Spring FrameworkServlet ''
+2016-11-03 23:51:24 INFO  TestDispatcherServlet:489 - FrameworkServlet '': initialization started
+2016-11-03 23:51:24 INFO  TestDispatcherServlet:508 - FrameworkServlet '': initialization completed in 2 ms
+2016-11-03 23:51:24 INFO  GenericWebApplicationContext:960 - Closing org.springframework.web.context.support.GenericWebApplicationContext@38364841: startup date [Thu Nov 03 23:51:19 EET 2016]; root of context hierarchy
+2016-11-03 23:51:24 INFO  TilesAccess:88 - Removing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+2016-11-03 23:51:24 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-11-03 23:51:24 INFO  EmbeddedDatabaseFactory:217 - Shutting down embedded database: url='jdbc:hsqldb:mem:dataSource'
